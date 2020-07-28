@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundedCornerImageView">
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="strokeColor" format="color"/>
+        <attr name="cornerRadius" format="dimension"/>
+    </declare-styleable>
+    
+    <declare-styleable name="CircularProgressBar">
+        <attr name="progressColorStart" format="integer"/>
+        <attr name="progressColorEnd" format="integer"/>
+        <attr name="progressMax" format="integer"/>
+        <attr name="progressCurrent" format="integer"/>
+        <attr name="progressStartAngle" format="integer"/>
+        <attr name="progressLabelColorEmpty" format="integer"/>
+        <attr name="progressLabelSize" format="integer"/>
+        <attr name="progressLabelColor" format="integer"/>
+        <attr name="progressText" format="integer"/>
+    </declare-styleable>
+</resources>

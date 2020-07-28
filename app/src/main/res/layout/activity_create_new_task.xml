@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Theme.MaterialComponents.DayNight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8000000"
+    android:fillViewport="true"
+    tools:context=".activities.CreateNewTaskActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivBackArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+            android:tint="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ivBackArrow"
+            android:layout_toEndOf="@id/ivBackArrow"
+            android:paddingStart="@dimen/margin_medium"
+            android:paddingTop="2dp"
+            android:text="A Create New Task"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_regular" />
+
+        <TextView
+            android:id="@+id/tvSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ivBackArrow"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:paddingStart="@dimen/margin_medium"
+            android:text="Save"
+            android:textColor="@android:color/holo_green_light" />
+
+        <TextView
+            android:id="@+id/tvClientTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivBackArrow"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:text="@string/txt_lbl_client"
+            android:textColor="@android:color/darker_gray" />
+
+        <com.cep.padc_x_customview_cep.views.components.RoundedCornerImageView
+            android:id="@+id/ivClient"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tvClientTxt"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lun_lun"
+            app:cornerRadius="25dp" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignTop="@id/ivClient"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:layout_toEndOf="@id/ivClient" />
+
+        <TextView
+            android:id="@+id/tvProjectNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivClient"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:text="@string/txt_lbl_project_name"
+            android:textColor="@android:color/darker_gray" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etProjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvProjectNameTxt"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_regular" />
+
+        <TextView
+            android:id="@+id/tvProjectDurationTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etProjectName"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:text="@string/txt_lbl_project_name"
+            android:textColor="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/llProjectDuration"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/tvProjectDurationTxt"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+<!--            <androidx.appcompat.widget.AppCompatSpinner-->
+<!--                android:id="@+id/spStartDate"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="@dimen/margin_medium_2"-->
+<!--                android:layout_marginEnd="@dimen/margin_medium"-->
+<!--                android:layout_weight="1" />-->
+            <include layout="@layout/viewpod_date"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginEnd="@dimen/margin_medium"/>
+
+            <include layout="@layout/viewpod_date"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium_2"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAssigneeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llProjectDuration"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:text="@string/txt_lbl_assignee"
+            android:textColor="@android:color/darker_gray" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAssignee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAssigneeTxt"
+            android:layout_margin="@dimen/margin_medium"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_profile" />
+
+        <TextView
+            android:id="@+id/tvCategoryTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvAssignee"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:text="@string/txt_lbl_category"
+            android:textColor="@android:color/darker_gray" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGpCategory"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/tvCategoryTxt"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            app:checkedChip="@id/chipDesign"
+            app:singleLine="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipDesign"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/chip_lbl_design"
+                app:chipBackgroundColor="@color/bg_chip_state"
+                app:chipCornerRadius="@dimen/margin_medium" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipFrontend"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/chip_lbl_frontend"
+                app:chipBackgroundColor="@color/bg_chip_state"
+                app:chipCornerRadius="@dimen/margin_medium" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipBackend"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/chip_lbl_backend"
+                app:chipBackgroundColor="@color/bg_chip_state"
+                app:chipCornerRadius="@dimen/margin_medium" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chipGpCategory"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:background="@drawable/rounded_upper_corner">
+
+            <ImageView
+                android:id="@+id/ivAttach"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:padding="12dp"
+                android:background="@drawable/rounded_bg"
+                android:src="@drawable/attach"
+                app:tint="@color/colorAccent" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/ivAttach"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_toStartOf="@id/ivAttach"
+                android:text="Description"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAttachmentTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etDescription"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:text="@string/txt_lbl_attachments"
+                android:textColor="@android:color/darker_gray" />
+
+            <com.cep.padc_x_customview_cep.views.components.RoundedCornerImageView
+                android:id="@+id/ivAttachImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/tvAttachmentTxt"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:scaleType="centerCrop"
+                android:src="@drawable/lun_lun"
+                app:cornerRadius="25dp" />
+
+            <TextView
+                android:id="@+id/tvFileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/ivAttachImg"
+                android:layout_alignTop="@id/ivAttachImg"
+                android:paddingStart="@dimen/margin_medium_2"
+                android:text="Attachment 1"
+                android:textColor="@android:color/black"/>
+
+            <SeekBar
+                android:id="@+id/sbFilePercentage"
+                android:layout_below="@id/tvFileName"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_toEndOf="@id/ivAttachImg"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:layout_toStartOf="@id/ivCancel"
+                />
+
+            <ImageView
+                android:id="@+id/ivCancel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/tvAttachmentTxt"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:layout_alignParentEnd="true"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounded_bg"
+                android:src="@drawable/ic_baseline_clear_24"
+                android:layout_alignTop="@id/ivAttachImg"
+                android:padding="@dimen/margin_medium_2"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCreateTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/margin_medium_2"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/btn_lbl_create_task"
+                app:cornerRadius="@dimen/margin_medium_2"
+
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

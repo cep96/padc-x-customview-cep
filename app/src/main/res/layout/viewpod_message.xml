@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cep.padc_x_customview_cep.views.viewpods.MessageViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_medium"
+    android:weightSum="3">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.5">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:background="@drawable/rounded_bg_stroke"
+            android:padding="@dimen/margin_medium"
+            android:src="@drawable/ic_baseline_share_24"
+            android:tint="@color/colorAccent" />
+    </FrameLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_weight="2"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@string/btn_lbl_message"
+        app:cornerRadius="@dimen/margin_medium_2" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.5">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:background="@drawable/rounded_bg_stroke"
+            android:padding="@dimen/margin_medium"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_assignment_turned_in_24"
+            android:tint="@color/colorAccent" />
+    </FrameLayout>
+
+</com.cep.padc_x_customview_cep.views.viewpods.MessageViewPod>

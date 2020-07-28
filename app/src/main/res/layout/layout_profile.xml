@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        tools:listitem="@layout/item_profile"
+        tools:itemCount="3"/>
+
+    <com.cep.padc_x_customview_cep.views.components.CircularProgressBar
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:layout_weight="0.5"
+        app:progressMax="100"
+        app:progressText="0"
+        />
+
+</LinearLayout>

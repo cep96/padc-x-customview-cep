@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">PADC-X-CustomView-CEP</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="txt_lbl_create_additional_page">Create additional pages</string>
+    <string name="txt_lbl_main_toolbar_title">OMP Dashboard</string>
+    <string name="txt_lbl_client">CLIENT</string>
+    <string name="txt_lbl_project_name">PROJECT NAME</string>
+    <string name="txt_lbl_assignee">ASSIGNEE</string>
+    <string name="txt_lbl_category">CATEGORY</string>
+    <string name="chip_lbl_design">Design</string>
+    <string name="chip_lbl_frontend">Frontend</string>
+    <string name="chip_lbl_backend">Backend</string>
+    <string name="btn_lbl_create_task">Create Task</string>
+    <string name="btn_lbl_message">Message</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_lbl_attachments">ATTACHMENTS</string>
+</resources>
