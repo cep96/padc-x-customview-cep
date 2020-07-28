@@ -30,12 +30,13 @@
         android:layout_margin="@dimen/margin_medium_2"/>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnInProgress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="@dimen/margin_medium"
         android:layout_marginEnd="@dimen/margin_medium_2"
-        android:text="In Progress"
+        android:text="In progress"
         android:textAllCaps="false"
         app:cornerRadius="@dimen/margin_medium"
         android:backgroundTint="@android:color/holo_red_light"

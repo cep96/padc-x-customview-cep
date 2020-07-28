@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_medium"
-        tools:listitem="@layout/item_task"
+        tools:listitem="@layout/view_pod_task"
         tools:itemCount="5"/>
 
 </FrameLayout>

@@ -9,7 +9,7 @@ class TaskRecyclerAdapter: BaseRecyclerAdapter<TaskViewHolder, Int>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaskViewHolder {
         return TaskViewHolder(
             LayoutInflater.from(parent.context)
-                .inflate(R.layout.item_task, parent, false)
+                .inflate(R.layout.view_pod_task, parent, false)
         )
     }
 }

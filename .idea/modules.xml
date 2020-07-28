@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PADC-X-CustomView-CEP.iml" filepath="$PROJECT_DIR$/.idea/modules/PADC-X-CustomView-CEP.iml" group="PADC-X-CustomView-CEP" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="PADC-X-CustomView-CEP/app" />
+    </modules>
+  </component>
+</project>

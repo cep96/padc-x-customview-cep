@@ -31,8 +31,13 @@ class MainActivity : AppCompatActivity(), MainView , ProfileDelegate{
 
         setUpPresenter()
         setUpProfileRecyclerView()
+        setUpProgressBar()
         setUpTaskRecyclerView()
 
+    }
+
+    private fun setUpProgressBar() {
+        progressBar.setProgress(50)
     }
 
     private fun setUpTaskRecyclerView() {

@@ -7,14 +7,10 @@
     </declare-styleable>
     
     <declare-styleable name="CircularProgressBar">
-        <attr name="progressColorStart" format="integer"/>
-        <attr name="progressColorEnd" format="integer"/>
-        <attr name="progressMax" format="integer"/>
-        <attr name="progressCurrent" format="integer"/>
-        <attr name="progressStartAngle" format="integer"/>
-        <attr name="progressLabelColorEmpty" format="integer"/>
-        <attr name="progressLabelSize" format="integer"/>
-        <attr name="progressLabelColor" format="integer"/>
-        <attr name="progressText" format="integer"/>
+        <attr name="progressColor" format="color"/>
+        <attr name="progressWidth" format="integer"/>
+        <attr name="android:textColor" format="color"/>
+        <attr name="showProgressText" format="boolean"/>
+        <attr name="useRoundedCorner" format="boolean"/>
     </declare-styleable>
 </resources>
